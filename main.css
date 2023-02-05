@@ -35,13 +35,33 @@ button {
   cursor: pointer;
 }
 
-#resultado {
-  font-weight: 500px;
+
+table {
+  font-family: "Inter", sans-serif;
+  border-collapse: collapse;
+  width: 500px;
+  margin: auto;
+  border: 1px solid #ccc;
 }
 
-.valido {
-  color: #046404;
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
-.invalido {
-  color: #e40000;
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(28, 35, 95);
+  color: #FFF;
 }

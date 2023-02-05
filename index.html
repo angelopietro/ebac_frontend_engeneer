@@ -9,35 +9,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.css" />
-  <title>EBAC - Validando dados do formulário</title>
+  <script src="./main.js"></script>
+  <title>EBAC - Agenda de contatos</title>
 </head>
-<script>
-
-  function valorMaior() {
-    let primeiro_numero = document.getElementById("primeiro_numero").value;
-    let segundo_numero = document.getElementById("segundo_numero").value;
-
-    if (primeiro_numero < segundo_numero) {
-      document.getElementById("resultado").classList.add("valido");
-      document.getElementById("resultado").classList.remove("invalido");
-      return document.getElementById("resultado").innerHTML = 'Resultado válido por que o valor B é maior do que o valor A';
-    }
-    document.getElementById("resultado").classList.add("invalido");
-    document.getElementById("resultado").classList.remove("valido");
-    return document.getElementById("resultado").innerHTML = 'Resultado inválido por que o valor B não é maior do que o valor A';
-  }
-
-</script>
 
 <body>
-  <form>
-    <label>VALOR A</label>
-    <input type="number" name="primeiro_numero" id="primeiro_numero" min="0" value="0">
-    <label>VALOR B</label>
-    <input type="number" name="segundo_numero" id="segundo_numero" min="0" value="0">
-    <button type="button" onClick="valorMaior()">Validar dados</button>
+  <form id="form-contatos" onsubmit="return false;">
+    <label>Nome</label>
+    <input type="text" name="nome_contato" id="nome_contato" placeholder="Nome Contato">
+    <label>Telefone</label>
+    <input type="text" name="telefone_contato" id="telefone_contato" placeholder="Telecone Contato">
+    <button type="button" onclick="cadastrarContato()">Realizar cadastro</button>
   </form>
-  <div id="resultado"></div>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Telefone</th>
+    </tr>
+    <tbody id="lista_contatos"></tbody>
+  </table>
+
 </body>
 
 </html>
