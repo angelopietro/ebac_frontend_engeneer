@@ -8,28 +8,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <link rel="stylesheet" href="./main.css" />
   <script src="./main.js"></script>
-  <title>EBAC - Agenda de contatos</title>
+  <title>EBAC - Lista de tarefas</title>
 </head>
 
 <body>
-  <form id="form-contatos" onsubmit="return false;">
-    <label>Nome</label>
-    <input type="text" name="nome_contato" id="nome_contato" placeholder="Nome Contato">
-    <label>Telefone</label>
-    <input type="text" name="telefone_contato" id="telefone_contato" placeholder="Telecone Contato">
-    <button type="button" onclick="cadastrarContato()">Realizar cadastro</button>
-  </form>
+	<body>
+     <div class="container">
+      <h2>Lista de tarefas</h2>       
+      <form>
+        <input type="text" name="nomeTarefa" id="nomeTarefa" placeholder="Nome da tarefa"/>     
+        <button>Cadastrar</button> 
+      </form>
 
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Telefone</th>
-    </tr>
-    <tbody id="lista_contatos"></tbody>
-  </table>
-
+      <ul></ul>   
+    
+    </div>
 </body>
-
 </html>
