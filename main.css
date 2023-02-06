@@ -21,12 +21,6 @@ h2 {
   padding: 10px 0;
 }
 
-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 input {
   padding: 8px;
   border: 1px solid #ccc;
@@ -38,20 +32,28 @@ button {
   cursor: pointer;
   padding: 8px;
   border: 1px solid #ccc;
-  width: 150px;
-  margin-left: 5px;
+  width: 100%;
   font-weight: 500;
 }
 
-ul {
-  padding-left: 20px;
+.nome,
+.email,
+.telefone-cep,
+.endereco,
+.cep,
+.botao{
+  padding: 5px 0;
 }
 
-ul li {
-  padding: 5px;
-  cursor: pointer;
+.telefone-cep {
+  display: flex;
+  justify-content:space-between 
 }
 
-.tarefa-concluida {
-  text-decoration: line-through;
+.telefone-cep input {
+  width: 195px;
+}
+
+.botao {
+  width: 100%;
 }

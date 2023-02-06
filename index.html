@@ -9,21 +9,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="./main.css" />
   <script src="./main.js"></script>
-  <title>EBAC - Lista de tarefas</title>
+  <title>EBAC - Plugins jQuery</title>
 </head>
 
 <body>
      <div class="container">
-      <h2>Lista de tarefas</h2>       
-      <form>
-        <input type="text" name="nomeTarefa" id="nomeTarefa" placeholder="Nome da tarefa"/>     
-        <button>Cadastrar</button> 
-      </form>
+        <h2>Cadastro</h2>       
+        <form>
+            <div class="nome">
+              <input type="text" name="nome" id="nome" placeholder="Nome completo"/>
+            </div>
 
-      <ul></ul>   
-    
+            <div class="email">   
+              <input type="email" name="email" id="email" placeholder="E-mail"/>   
+            </div>
+
+            <div class="telefone-cep">   
+              <input type="text" name="telefone" id="telefone" placeholder="Telefone"/>  
+              <input type="text" name="cpf" id="cpf" placeholder="CPF"/>  
+            </div>
+
+            <div class="endereco">   
+              <input type="text" name="endececo" id="endececo" placeholder="Endereço completo"/>  
+            </div>
+
+            <div class="cep">   
+              <input type="text" name="cep" id="cep" placeholder="CEP"/>     
+            </div>
+            
+            <div class="botao">    
+              <button id="botao-cadastrar">Cadastrar</button> 
+            </div>
+        </form>
     </div>
 </body>
 </html>

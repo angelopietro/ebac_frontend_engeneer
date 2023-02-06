@@ -3,19 +3,16 @@ $(document).ready(function () {
     event.preventDefault();
   });
 
-  $('#nomeTarefa').keydown(function (event) {
-    if (event.keyCode == 13) {
-      $('button').click();
+  $('#cpf').mask('000.000.000-00');
+  $('#cep').mask('00000-000');
+  $('#telefone').mask('(00) 00000-0000');
+
+  $('button').click(function () {
+    const nome = $('#nome').val().split(' ').length >= 2;
+    if (!nome) {
+      alert('Por favor, preencha o seu nome completo');
+      return;
     }
   });
 
-  $('button').click(function () {
-    const nomeTarefa = $('#nomeTarefa').val();
-    $('ul').prepend('<li>' + nomeTarefa + '</li>');
-    $('#nomeTarefa').val('');
-  });
-
-  $(document).on('click', 'li', function () {
-    $(this).toggleClass('tarefa-concluida');
-  });
 });
