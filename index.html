@@ -5,45 +5,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="./main.css" />
-  <script src="./main.js"></script>
-  <title>EBAC - Plugins jQuery</title>
+   <link rel="stylesheet" href="./main.css" />
+  <title>EBAC Shoes</title>
 </head>
 
 <body>
-     <div class="container">
-        <h2>Cadastro</h2>       
-        <form>
-            <div class="nome">
-              <input type="text" name="nome" id="nome" placeholder="Nome completo"/>
-            </div>
+  <header>
 
-            <div class="email">   
-              <input type="email" name="email" id="email" placeholder="E-mail"/>   
-            </div>
+    <nav>
+      <h1><a href="/">EBAC Shoes</a></h1>
+      <ul>
+          <li><a href="#sobre-a-loja">Sobre a loja</a></li>          
+          <li><a href="#produtos">Produtos</a></li>
+      </ul>
+    </nav>
 
-            <div class="telefone-cep">   
-              <input type="text" name="telefone" id="telefone" placeholder="Telefone"/>  
-              <input type="text" name="cpf" id="cpf" placeholder="CPF"/>  
-            </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      
+      <section class="sobre" id="sobre-a-loja">
+        <div class="foto-loja">
+          <img src="./imagens/prateleiras-para-loja-tenis.jpg" alt="Prateleira">
+          <span>créditos da foto: storedesign.ie</span>
+        </div>
+        <div class="texto-loja">
+            <h2>Sobre a loja</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dui nisi, dapibus eget mauris eleifend, eleifend pretium augue. Duis purus ligula, efficitur ac ex id, interdum pellentesque libero. Aenean dui nisi, condimentum at lobortis et, pharetra a nibh. Pellentesque venenatis, eros vel sagittis ultrices, orci nibh aliquam nisi, vel lobortis tortor tortor consectetur augue. Suspendisse potenti. Nullam varius mauris vel auctor egestas. Donec nisi erat, luctus vitae maximus id, convallis sed ligula. Morbi id elit mattis tellus condimentum tempus. Aenean mattis mi in porta fermentum.</p>
+        </div>
+    </section>
 
-            <div class="endereco">   
-              <input type="text" name="endececo" id="endececo" placeholder="Endereço completo"/>  
-            </div>
+    <section class="produtos" id="produtos">
+      
+      <h2>Produtos</h2>
 
-            <div class="cep">   
-              <input type="text" name="cep" id="cep" placeholder="CEP"/>     
-            </div>
-            
-            <div class="botao">    
-              <button id="botao-cadastrar">Cadastrar</button> 
-            </div>
-        </form>
-    </div>
+      <ul class="produtos-lista">
+        <li class="item">
+          <img src="./imagens/tenis-adidas.jpg">
+          <h3>Tênis Adidas Modelo XPTO</h3>
+          <p>Tênis Adidas preto, disponível nos tamanhos: 37, 38, 39, 40 e 42</p>
+          <button>Adicionar ao carrinho</button>
+      </li>
+      <li class="item">
+          <img src="./imagens/tenis-nike.jpg">
+          <h3>Tênis Nike Modelo XPTO</h3>
+          <p>Tênis Nike preto, disponível nos tamanhos: 37, 38, 39, 40 e 42</p>
+          <button>Adicionar ao carrinho</button>
+      </li>
+      <li class="item">
+          <img src="./imagens/tenis-vans.jpg">
+          <h3>Tênis Vans Modelo XPTO</h3>
+          <p>Tênis Vans preto, disponível nos tamanhos: 37, 38, 39, 40 e 42</p>
+          <button>Adicionar ao carrinho</button>
+      </li>
+      <li class="item">
+          <img src="./imagens/tenis-vans.jpg">
+          <h3>Tênis Vans Infantil Modelo XPTO</h3>
+          <p>Tênis Vans preto, disponível nos tamanhos: 27, 28, 29 e 30</p>
+          <button>Adicionar ao carrinho</button>
+      </li>
+      </ul>
+
+    </section>
+      
+    </div>    
+  </main>
+
 </body>
 </html>
