@@ -1,0 +1,14 @@
+@use '../variaveis/cores';
+.menu {
+  display: flex;
+
+  li {
+    font-weight: bold;
+    margin-left: 24px;
+
+    a {
+      color: cores.$whiteColor;
+      text-decoration: none;
+    }
+  }
+}
