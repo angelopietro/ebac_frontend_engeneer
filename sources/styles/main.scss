@@ -1,0 +1,6 @@
+@use 'variaveis';
+
+.botao {
+  color: variaveis.$corTexto;
+  background-color: variaveis.$corBotao;
+}
