@@ -12,7 +12,7 @@ li {
 }
 .container {
   max-width: 1024px;
-  width: 100%;
+  width: "100%";
   margin: 0 auto;
 }
 @media (max-width: 768px) and (max-width: 1023px) {
@@ -52,7 +52,7 @@ section {
   grid-template-columns: repeat(3, 32.66%);
   column-gap: 1%;
   row-gap: 4%;
-  width: 100%;
+  width: "100%";
 }
 @media (max-width: 768px) and (max-width: 1023px) {
   .products {
@@ -66,7 +66,7 @@ section {
   }
 }
 .product-item img {
-  width: 100%;
+  width: "100%";
   border-radius: 16px;
 }
 @media (max-width: 767px) {

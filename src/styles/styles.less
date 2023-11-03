@@ -1,6 +1,5 @@
+@import 'variaveis.less';
 @import 'mapas.less';
-@breakponitMobile: ~"(max-width: 767px)";
-@breakponitTablet: ~"(max-width: 768px) and (max-width: 1023px)";
 
 * {
   margin: 0;
@@ -19,7 +18,7 @@ li {
 
 .container {
   max-width: 1024px;
-  width: 100%;
+  width: @full-width;
   margin: 0 auto;
 
   @media @breakponitTablet {
@@ -65,7 +64,7 @@ section {
   grid-template-columns: repeat(3, 32.66%);
   column-gap: 1%;
   row-gap: 4%;
-  width: 100%;
+  width: @full-width;
 
   @media @breakponitTablet {
     grid-template-columns: repeat(2, 48.5%);
@@ -82,7 +81,7 @@ section {
 
   &-item {
     img {
-      width: 100%;
+      width: @full-width;
       border-radius: 16px;
     }
 
