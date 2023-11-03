@@ -4,10 +4,11 @@
   • Crie pelo menos três instâncias de objetos;
 */
 class TipoDeCafe {
-  constructor(cafe, tamanho, acucar) {
+  constructor(cafe, tamanho, acucar, levar) {
     this.cafe = cafe;
     this.tamanho = tamanho;
     this.acucar = acucar;
+    this.levar = levar;
   }
 
   prepararCafe() {
@@ -30,18 +31,22 @@ class CafeComAcucar extends TipoDeCafe {
 }
 
 class ParaViagem extends TipoDeCafe {
-  constructor(cafe, tamanho) {
-    super(cafe, tamanho);
+  constructor(cafe, tamanho, acucar, levar) {
+    super(cafe, tamanho, acucar, levar);
   }
 
   prepararCafe() {
-    return `${super.prepararCafe()} para levar na viagem`;
+    if (this.levar) {
+      return `${super.prepararCafe()} para levar na viagem`;
+    } else {
+      return `${super.prepararCafe()} para beber na cafeteria com os amigos`;
+    }
   }
 }
 
 const pedidoCafe1 = new TipoDeCafe('Puro', 'pequeno');
 const pedidoCafe2 = new CafeComAcucar('Cappuccino', 'grande', true);
-const pedidoCafe3 = new ParaViagem('Expresso', 'médio');
+const pedidoCafe3 = new ParaViagem('Expresso', 'médio', null , false);
 
 console.log(pedidoCafe1.prepararCafe());
 console.log(pedidoCafe2.prepararCafe());
