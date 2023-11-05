@@ -2,7 +2,6 @@
   "name": "modulo22",
   "version": "1.0.0",
   "description": "Evento para aniversário",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel index.html  src/styles/main.scss src/scripts/main.js",
     "build": "parcel build index.html",
