@@ -8,7 +8,7 @@ const CalculoIMC = () => {
 
   const realizarCalculo = () => {
     if (!altura && !peso) {
-      return setMensagem('Erro ao processar cálculo!');
+      return;
     }
 
     const calculoAltura = altura / 100;
